@@ -1,0 +1,23 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.hibernate.tutorial.domain">
+
+    <class name="com.ul.taxi.order.model.Order" table="order_info">
+    <!--  id配置主键映射 -->
+       <id name="orderid" column="order_id">
+           <!--  主键的生成策略 -->
+        <generator class="native"></generator>
+       </id>
+       <property name="userid" column="user_id" type="int" length="20"></property>   
+       <property name="carno" column="car_no" type="int" length="20"></property>  
+       <property name="from" column="from_address" type="string" length="40" ></property>
+       <property name="to" column="to_address" type="string" length="40" ></property>
+       <property name="time" column="time" type="string" length="20" ></property>
+       <property name="price" column="price" type="int" length="20"></property>   
+       <property name="ordertime" column="order_time" type="string" length="20" ></property>
+       <property name="orderstate" column="order_state" type="string" length="20" ></property>
+    </class>
+
+</hibernate-mapping>

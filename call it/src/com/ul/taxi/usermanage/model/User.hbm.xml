@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.hibernate.tutorial.domain">
+
+    <class name="com.ul.taxi.usermanage.model.User" table="user_info">
+    <!--  id配置主键映射 -->
+       <id name="userid" column="user_id">
+           <!--  主键的生成策略 -->
+        <generator class="native"></generator>
+       </id>
+       <property name="username" column="user_name" type="string" length="20" ></property>
+       <property name="userpassword" column="user_password" type="string" length="20" ></property>
+       <property name="email" column="email" type="string" length="40" ></property>
+       <property name="name" column="name" type="string" length="20" ></property>
+       <property name="phone" column="phone" type="int" length="20"></property>   
+    
+    </class>
+
+</hibernate-mapping>

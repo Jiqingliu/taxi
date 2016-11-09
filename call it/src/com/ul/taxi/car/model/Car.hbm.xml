@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.hibernate.tutorial.domain">
+
+    <class name="com.ul.taxi.car.model.Car" table="taxi_info">
+    <!--  id配置主键映射 -->
+       <id name="carid" column="car_id">
+           <!--  主键的生成策略 -->
+        <generator class="native"></generator>
+       </id>
+       <property name="carno" column="car_no" type="int" length="20" ></property>
+       <property name="cartype" column="car_type" type="string" length="20" ></property>
+       <property name="divername" column="diver_name" type="string" length="20" ></property>
+       <property name="diverphone" column="diver_phone" type="int" length="20" ></property>
+       <property name="price" column="price" type="int" length="20" ></property>
+       <property name="mark" column="mark" type="int" length="20"></property>   
+       <property name="state" column="state" type="string" length="20" ></property>
+    </class>
+
+</hibernate-mapping>

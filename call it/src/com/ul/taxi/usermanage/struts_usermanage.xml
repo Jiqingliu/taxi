@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<!-- 指定Struts 2配置文件的根元素 -->
+<struts>
+        <!-- 所有的Action定义都应该放在package下 -->
+        <!-- name以及namespace都应按照模块命名  -->
+	<package name="usermanage" namespace="/usermanage" extends="struts-default" >
+		<!-- ssh结合后Action的创建已经交于Spring框架
+		所以class属性应该配置Action在Spring配置文件的名字 -->
+		<action name="user" class="useraction">
+		<result name="success">/success.jsp</result>
+		<result name="error">/error.jsp</result>
+		<result name="no match user">/loginerror.jsp</result>
+		<result name="userlist">/usermanage/userlist.jsp</result>
+		<result name="updateuser">/usermanage/userupdate.jsp</result>
+		<result name="main">/main.jsp</result>
+		</action>
+		
+		
+	</package>
+</struts>
