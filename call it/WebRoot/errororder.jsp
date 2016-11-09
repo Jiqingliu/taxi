@@ -18,6 +18,7 @@
         document.getElementById('ordertime').value =Date();
     }
     var req = new XMLHttpRequest();
+   
     function ccbt(cartype)
 	{
 	
