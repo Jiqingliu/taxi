@@ -32,12 +32,20 @@ public class OrderAction extends ActionSupport  implements ModelDriven<Order>,Re
 	public String add() throws Exception
 	{
 		boolean result=true;
+		Order o = new Order();
+		o.setUserid(order.getUserid());
+		o.setOrderstate("progress");
+		List<Order> list = orderdao.queryOrder(o);
+		if(list.isEmpty()){
 		result = orderdao.add(order);
 		
 		if(result)
 			return "success";
 		else
-			return "error";
+			return "error";}
+		else{
+			return "double book";
+		}
 		
 	}
 	
@@ -62,18 +70,12 @@ public class OrderAction extends ActionSupport  implements ModelDriven<Order>,Re
 		else
 			return "error";
 		
-	}
-	
+	}	
 	//∑÷“≥’π æ
-
 	public void setRequest(Map<String, Object> request) {
 		this.request = request;
 		
 	}
-	
-
-
-
 
 	public void setSession(Map<String, Object> session) {
 		this.session=session;

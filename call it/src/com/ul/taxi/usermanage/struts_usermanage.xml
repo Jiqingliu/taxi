@@ -15,7 +15,7 @@
 		<result name="no match user">/loginerror.jsp</result>
 		<result name="userlist">/usermanage/userlist.jsp</result>
 		<result name="updateuser">/usermanage/userupdate.jsp</result>
-		<result name="main">/main.jsp</result>
+		<result name="main">/home.jsp</result>
 		</action>
 		
 		

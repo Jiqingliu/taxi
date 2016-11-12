@@ -36,7 +36,29 @@ public class OrderDaoImpl extends HibernateDaoSupport implements OrderDao {
 		
 		SqlBuilder sql = new SqlBuilder();
 		
-
+		
+		sql.append(" from Order where 1=1");
+		if(order.getOrderid()!=0)
+		{
+			sql.append(" and orderid = ? ");
+			sql.addArg(order.getOrderid());
+		}
+		if(order.getUserid()!=0)
+		{
+			sql.append(" and userid = ? ");
+			sql.addArg(order.getUserid());
+		}
+		if(order.getCarno()!=0)
+		{
+			sql.append(" and carno = ? ");
+			sql.addArg(order.getCarno());
+		}
+		if(order.getOrderstate()!=null&&!order.getOrderstate().equals(""))
+		{
+			sql.append(" and orderstate like ? ");
+			sql.addArg("%"+order.getOrderstate()+"%");
+		}
+		
 		
 
 		list = this.getHibernateTemplate().find(sql.getSQL(),sql.getSQLArgs());

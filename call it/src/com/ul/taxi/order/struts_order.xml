@@ -12,7 +12,7 @@
 		<action name="order" class="orderaction">
 		<result name="success">/success.jsp</result>
 		<result name="error">/error.jsp</result>
-
+        <result name="double book">/double book.jsp</result>
 		</action>
 		
 		

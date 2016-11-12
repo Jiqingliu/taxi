@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mvc.controller;
-import com.mvc.people.User;
-import com.mvc.people.customertype;
-import com.mvc.people.customertype.categoryinterface;
-import com.mvc.people.student;
-import com.mvc.people.userFactory;
-import com.mvc.people.worker;
+package com.ul.taxi;
+import com.ul.taxi.people.User;
+import com.ul.taxi.people.customertype;
+import com.ul.taxi.people.customertype.categoryinterface;
+import com.ul.taxi.people.student;
+import com.ul.taxi.people.userFactory;
+import com.ul.taxi.people.worker;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Level;

@@ -29,6 +29,12 @@ public class UserAction extends ActionSupport  implements ModelDriven<User>,Requ
 	public String add() throws Exception
 	{
 		boolean result=true;
+		if(user.getCategroy()=="student")
+		{
+			user.setDiscount(5);
+		}else{
+			user.setDiscount(0);
+		}
 		result = dao.addUser(user);
 		
 		if(result)

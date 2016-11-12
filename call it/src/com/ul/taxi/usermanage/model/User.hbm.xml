@@ -15,7 +15,8 @@
        <property name="email" column="email" type="string" length="40" ></property>
        <property name="name" column="name" type="string" length="20" ></property>
        <property name="phone" column="phone" type="int" length="20"></property>   
-    
+    <property name="categroy" column="categroy" type="string" length="20"></property>   
+    <property name="discount" column="discount" type="int" length="20"></property>   
     </class>
 
 </hibernate-mapping>

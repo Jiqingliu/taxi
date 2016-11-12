@@ -8,6 +8,8 @@ public class User {
 	private String email;
 	private String name;
 	private int phone;
+	private String categroy;
+	private int discount;
 	public int getUserid() {
 		return userid;
 	}
@@ -43,6 +45,18 @@ public class User {
 	}
 	public void setPhone(int phone) {
 		this.phone = phone;
+	}
+	public String getCategroy() {
+		return categroy;
+	}
+	public void setCategroy(String categroy) {
+		this.categroy = categroy;
+	}
+	public int getDiscount() {
+		return discount;
+	}
+	public void setDiscount(int discount) {
+		this.discount = discount;
 	}
 	
 
