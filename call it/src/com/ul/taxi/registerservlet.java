@@ -4,12 +4,13 @@
  * and open the template in the editor.
  */
 package com.ul.taxi;
-import com.ul.taxi.people.User;
-import com.ul.taxi.people.customertype;
-import com.ul.taxi.people.customertype.categoryinterface;
-import com.ul.taxi.people.student;
-import com.ul.taxi.people.userFactory;
-import com.ul.taxi.people.worker;
+import com.ul.taxi.entity.User;
+import com.ul.taxi.entity.customertype;
+import com.ul.taxi.entity.student;
+import com.ul.taxi.entity.userFactory;
+import com.ul.taxi.entity.worker;
+import com.ul.taxi.entity.customertype.categoryinterface;
+
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Level;

@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package com.ul.taxi.people;
+package com.ul.taxi.entity;
 
-import com.ul.taxi.people.customertype.categoryinterface;
+import com.ul.taxi.entity.customertype.categoryinterface;
 public class student implements categoryinterface{
 //            public String username,password,email,address,phno,category;
 //            private Connection connection = null;

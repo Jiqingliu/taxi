@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.ul.taxi.people;
+package com.ul.taxi.entity;
 
 /**
  *

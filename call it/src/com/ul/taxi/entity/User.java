@@ -4,10 +4,11 @@
  * and open the template in the editor.
  */
 
-package com.ul.taxi.people;
+package com.ul.taxi.entity;
 
 import com.ul.taxi.db.dbconnection;
-import com.ul.taxi.people.registerinterface.insertdata;
+import com.ul.taxi.entity.registerinterface.insertdata;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
